@@ -1,16 +1,19 @@
+import exemplos.Conta;
 import exemplos.Quadrado;
 
 public class Main {
     public static void main(String[] args) {
-        Quadrado q1 = new Quadrado();
-        q1.lado = 10.5;
-        Quadrado q2 = new Quadrado();
-        q2.lado = 27.48;
+        Conta c1 = new Conta();
+        c1.numero = 1;
+        c1.saldo = 1000.0;
 
-        System.out.println(q1.calcularArea());
-        System.out.println(q2.calcularArea());
-        System.out.println(q1.calcularPerimetro());
-        System.out.println(q2.calcularPerimetro());
+        Conta c2 = new Conta();
+        c2.numero = 2;
+        c2.saldo = 2500.0;
+
+        c1.depositar(300.0);
+        System.out.println(c1.saldo);
+
 
     }
 }
